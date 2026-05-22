@@ -57,7 +57,6 @@ def build_model(vocab_size, max_len):
 # ── Page config ───────────────────────────────────────────
 st.set_page_config(
     page_title="Image Captioner",
-    page_icon="🔍",
     layout="centered"
 )
 
@@ -222,8 +221,8 @@ def generate_caption(model, feature, word_to_idx, idx_to_word, max_len):
 
 
 # ── UI ─────────────────────────────────────────────────────
-st.markdown("<h1>Caption<br>Engine</h1>", unsafe_allow_html=True)
-st.markdown('<p class="subtitle">VGG16 · Bahdanau Attention · Beam Search</p>', unsafe_allow_html=True)
+st.markdown("<h1>Caption Generator Using CNN and RNN</h1>", unsafe_allow_html=True)
+st.markdown('<p class="subtitle">22i-2127 · Abdul Qadir Tareen · DLP BCS 8A</p>', unsafe_allow_html=True)
 st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
 uploaded = st.file_uploader(
